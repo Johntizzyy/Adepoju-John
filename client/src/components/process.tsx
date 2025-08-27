@@ -33,7 +33,6 @@ export default function Process() {
                 <p className="text-muted-foreground leading-relaxed">{step.description}</p>
               </div>
               <div className={`bg-card rounded-xl p-8 space-y-4 ${index % 2 === 1 ? "order-1 lg:order-2" : ""}`}>
-                <div className="text-primary font-medium">{step.duration}</div>
                 <ul className="space-y-3 text-muted-foreground">
                   {step.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center gap-3">

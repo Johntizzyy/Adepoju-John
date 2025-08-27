@@ -109,9 +109,9 @@ export const SERVICES = [
 export const PROCESS_STEPS = [
   {
     number: "01",
-    title: "Do we Match?",
+    title: "Let's Connect",
     subtitle: "Discovery Call",
-    description: "Before we start, I determine if and how I can help you. What are your technical requirements? What technologies do you prefer? What goals do you have, and what problems can we solve with modern web development?",
+    description: "Let's start with a conversation to understand your vision and goals. Together, we'll explore your technical requirements, preferred technologies, and discuss how modern web development can solve your challenges and bring your ideas to life.",
     duration: "2 Hours",
     features: [
       "We get to know each other better",
