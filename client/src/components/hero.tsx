@@ -19,12 +19,12 @@ export default function Hero() {
     <section id="hero" className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16">
       <div className="max-w-7xl mx-auto">
         <div ref={ref} className="fade-in text-center space-y-12">
-          {/* Professional developer portrait */}
-          <div className="relative mx-auto w-80 h-80 lg:w-96 lg:h-96 overflow-hidden rounded-2xl">
+          {/* Professional developer portrait - matching Arik template */}
+          <div className="relative mx-auto w-80 h-80 lg:w-96 lg:h-96 overflow-hidden rounded-2xl bg-gradient-to-br from-background to-secondary">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800"
+              src={attached_assets/screenshot-1756252329645.png}
               alt="Adepoju John - Web Developer"
-              className="hero-image w-full h-full object-cover"
+              className="hero-image w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               data-testid="hero-image"
             />
           </div>

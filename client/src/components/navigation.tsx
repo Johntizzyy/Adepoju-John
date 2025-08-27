@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -64,7 +66,18 @@ export default function Navigation() {
             </div>
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-4">
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full hover:bg-secondary/80 transition-colors"
+              data-testid="theme-toggle"
+            >
+              {theme === "dark" ? (
+                <Sun className="w-5 h-5" />
+              ) : (
+                <Moon className="w-5 h-5" />
+              )}
+            </button>
             <button
               onClick={() => scrollToSection("contact")}
               className="bg-primary text-primary-foreground px-6 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors"
@@ -119,13 +132,26 @@ export default function Navigation() {
             >
               PROCESS
             </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="bg-primary text-primary-foreground px-6 py-2 rounded-full text-sm font-medium inline-block mt-4"
-              data-testid="mobile-nav-contact-cta"
-            >
-              LET'S TALK
-            </button>
+            <div className="flex items-center justify-between mt-4">
+              <button
+                onClick={toggleTheme}
+                className="p-2 rounded-full hover:bg-secondary/80 transition-colors"
+                data-testid="mobile-theme-toggle"
+              >
+                {theme === "dark" ? (
+                  <Sun className="w-5 h-5" />
+                ) : (
+                  <Moon className="w-5 h-5" />
+                )}
+              </button>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="bg-primary text-primary-foreground px-6 py-2 rounded-full text-sm font-medium"
+                data-testid="mobile-nav-contact-cta"
+              >
+                LET'S TALK
+              </button>
+            </div>
           </div>
         </div>
       )}
