@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { SOCIAL_LINKS } from "@/lib/constants";
-import heroImage from "@assets/screenshot-1756252329645.png";
+import heroImage from "@assets/hero-img.png";
 
 export default function Hero() {
   const ref = useScrollAnimation();
@@ -21,11 +21,11 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto">
         <div ref={ref} className="fade-in text-center space-y-12">
           {/* Professional developer portrait - matching Arik template */}
-          <div className="relative mx-auto w-80 h-80 lg:w-96 lg:h-96 overflow-hidden rounded-2xl bg-gradient-to-br from-background to-secondary">
+          <div className="relative my-5 mx-auto w-80 h-80 lg:w-96 lg:h-96 overflow-hidden rounded-2xl bg-gradient-to-br from-background to-secondary">
             <img
               src={heroImage}
               alt="Adepoju John - Web Developer"
-              className="hero-image w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              className="hero-image w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
               data-testid="hero-image"
             />
           </div>

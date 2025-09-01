@@ -28,7 +28,7 @@ export default function Navigation() {
               className="text-xl font-bold text-primary"
               data-testid="logo-button"
             >
-              adepoju.
+              Adepoju.
             </button>
           </div>
 
