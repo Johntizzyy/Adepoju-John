@@ -1,33 +1,37 @@
+import lorins from "../assets/lorins.png";
+import coinview from "../assets/coinview.png";
+import musicFinder from "../assets/musicfinder.png";
+
 export const SOCIAL_LINKS = {
-  whatsapp: "https://wa.me/+2347000000000",
+  whatsapp: "https://wa.me/+23437517462",
   linkedin: "https://linkedin.com/in/adepojujohn",
-  github: "https://github.com/adepojujohn",
-  twitter: "https://twitter.com/adepojujohn",
+  github: "https://github.com/johntizzyy",
+  twitter: "https://twitter.com/johntizzy5",
 };
 
 export const PROJECTS = [
   {
     id: 1,
-    title: "ShopFlow",
-    category: "Full-Stack E-commerce",
-    description: "Modern e-commerce platform built with React, Node.js, and Stripe integration.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+    title: "MusicFinder",
+    category: "Music Streanming",
+    description: "A music streaming app built with the iTunes API, allowing users to play 30-second previews of tracks and save their favorite songs.",
+    image: musicFinder,
     link: "#",
   },
   {
     id: 2,
-    title: "DataViz Pro",
-    category: "React Dashboard",
-    description: "Interactive analytics dashboard with real-time data visualization and reporting.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+    title: "CoinView",
+    category:"Finance / Crypto Dashboard",
+    description: "A web application that provides real-time cryptocurrency prices, market trends, and portfolio tracking using React and crypto APIs.",
+    image: coinview,
     link: "#",
   },
   {
     id: 3,
-    title: "TaskMaster",
-    category: "React Native App",
-    description: "Cross-platform task management application with offline capabilities.",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+    title: "Lorins Consults",
+    category: "React website",
+    description: "A professional website for a consulting firm built with React and TailwindCSS.",
+    image: lorins,
     link: "#",
   },
   {
@@ -84,7 +88,6 @@ export const TESTIMONIALS = [
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100",
   },
 ];
-
 export const SERVICES = [
   {
     number: "01",
