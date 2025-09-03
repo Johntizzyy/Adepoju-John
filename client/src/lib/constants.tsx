@@ -1,6 +1,7 @@
 import lorins from "../assets/lorins.png";
 import coinview from "../assets/coinview.png";
 import musicFinder from "../assets/musicfinder.png";
+import portfolio from "../assets/portfolio.png"
 
 export const SOCIAL_LINKS = {
   whatsapp: "https://wa.me/+23437517462",
@@ -12,10 +13,10 @@ export const SOCIAL_LINKS = {
 export const PROJECTS = [
   {
     id: 1,
-    title: "MusicFinder",
-    category: "Music Streanming",
-    description: "A music streaming app built with the iTunes API, allowing users to play 30-second previews of tracks and save their favorite songs.",
-    image: musicFinder,
+    title: "Creative Hub",
+    category: "Portfolio Website",
+    description: "Minimalist portfolio website with smooth animations and modern design.",
+    image: portfolio,
     link: "#",
   },
   {
@@ -34,14 +35,16 @@ export const PROJECTS = [
     image: lorins,
     link: "#",
   },
-  {
+    {
     id: 4,
-    title: "Creative Hub",
-    category: "Portfolio Website",
-    description: "Minimalist portfolio website with smooth animations and modern design.",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+    title: "MusicFinder",
+    category: "Music Streanming",
+    description: "A music streaming app built with the iTunes API, allowing users to play 30-second previews of tracks and save their favorite songs.",
+    image: musicFinder,
     link: "#",
   },
+
+  
 ];
 
 export const TESTIMONIALS = [
