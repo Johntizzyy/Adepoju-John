@@ -66,8 +66,10 @@ app.use((req, res, next) => {
       }
     );
   } else {
-    // In production, serve static files
-    serveStatic(app);
+    // In production, avoid serving static files on Vercel; Vercel handles static assets
+    if (process.env.VERCEL !== "1") {
+      serveStatic(app);
+    }
   }
 })();
 
